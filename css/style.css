@@ -1,0 +1,61 @@
+:root{
+	scrollbar-color: rgb(0, 191, 0) rgb(0, 128, 0) ;
+	scrollbar-width: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+}
+#container {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('../images/trendy-turtle-shell-pattern-for-textile-vector-54723764.jpg');
+	background-repeat: repeat;
+	background-color: rgb(0, 64, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+article {
+	width: 75vw;
+	height: 85vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section {
+	height: 95%;
+	width: 90%;
+	background-color: rgb();
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30rem;
+	overflow: auto hidden;
+	scroll-snap-type: x mandatory;
+}
+figure {
+	scroll-snap-align: center;
+}
+figure:first-of-type, figure:last-of-type {
+	width: 1rem;
+	scroll-snap-align: none;
+}
+img {
+	height: 60vh;
+	max-width: 70vw;
+	border-radius: 1rem;
+	border: 2px solid white ;
+}
+figcaption {
+	color: white;
+	text-align: center;
+	font-size: clamp(0.66rem, 1.5vw, 1.5rem);
+}
